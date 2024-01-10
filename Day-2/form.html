@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <button type="button" id="btn"></button>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Rigister</button>
+            </div>
+            <div class="icons">
+                <a href="#"><img src="./images/tw.png" alt="" srcset=""></a>
+                <img src="./images/gp.png" alt="" srcset="">
+                <img src="./images/fb.png" alt="" srcset="">
+            </div>
+            <form id="login" action="success.js" class="form-input">
+                <input class="input-field" type="text" placeholder="User Name" name="user" required>
+                <input class="input-field" type="password" placeholder="Password" required>
+                <input class="checkbox" type="checkbox"><span>Remember Me</span>
+                <button class="submit-btn" type="submit" onclick="getValue()">Login</button>
+            </form>
+            <form id="register" action="success.js" class="form-input">
+                <input class="input-field" type="text" placeholder="User Name" required>
+                <input class="input-field" type="text" placeholder="Full Name" required>
+                <input class="input-field" type="email" placeholder="E-Mail" required>
+                <input class="input-field" type="password" placeholder="Password" required>
+                <input class="checkbox" type="checkbox"><span>Accept terms & conditions</span>
+                <button class="submit-btn" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var userLogin = document.getElementById('login');
+        var userRegister = document.getElementById('register');
+        var btnClick = document.getElementById('btn');
+
+        function login() {
+            userLogin.style.left = "27px";
+            userRegister.style.left = '427px';
+            btnClick.style.left = '0'
+        }
+
+        function register() {
+            userLogin.style.transition = "1s";
+            userLogin.style.left = "-427px";
+            userRegister.style.transition = '1s';
+            userRegister.style.left = '27px';
+            btnClick.style.left = '110px'
+        }
+
+        function getValue(){
+            console.log(userLogin.user.value);
+
+        }
+    </script>
+</body>
+
+</html>
