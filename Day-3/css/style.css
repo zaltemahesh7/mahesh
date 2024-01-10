@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.home {
+    display: flex;
+}
+
+.nav {
+    background-color: #013e8d;
+    height: 100vh;
+    width: 300px;
+}
+
+.nav img {
+    width: 300px;
+    background: #fff;
+}
+
+.high-light img {
+    width: 66.5em;
+}
+
+.nav-list {
+    margin: 10px 0 0 29px;
+
+}
+
+.nav-list ul {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    gap: 15px;
+    font-size: 14px;
+    list-style: none;
+}
