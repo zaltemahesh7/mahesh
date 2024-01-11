@@ -12,6 +12,7 @@
     background-color: #013e8d;
     height: 100vh;
     width: 300px;
+    position: fixed;
 }
 
 .nav img {
@@ -19,13 +20,8 @@
     background: #fff;
 }
 
-.high-light img {
-    width: 66.5em;
-}
-
 .nav-list {
     margin: 10px 0 0 29px;
-
 }
 
 .nav-list ul {
@@ -36,4 +32,71 @@
     gap: 15px;
     font-size: 14px;
     list-style: none;
+}
+
+.high-light {
+    margin: 0 0 0 300px;
+
+}
+
+.high-light img {
+    width: 65.5em;
+}
+
+.plcell {
+    color: #fff;
+    margin-top: -5px;
+    padding: 15px;
+    background-color: #013e8d;
+}
+
+.main {
+}
+
+.main>h2 {
+    margin: 30px;
+}
+
+.main>.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.visited-com {
+    width: 188px;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.high-sal-off {
+    width: 188px;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.high-pack {
+    width: 188px;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.total-off {
+    width: 188px;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.overview {
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.cpc-text {
+    width: 50%;
+    text-wrap: wrap;
+    text-justify:distribute;
 }
