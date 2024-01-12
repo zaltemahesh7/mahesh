@@ -2,7 +2,17 @@
     margin: 0;
     padding: 0;
     background-color: lightgray;
+    font-family: sans-serif;
 }
+
+/* .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+    height: 200px;
+    width: 200px;
+} */
 
 .main {
     display: flex;
@@ -11,13 +21,14 @@
     margin: 10%;
     height: 200px;
     width: 200px;
-    /* background: linear-gradient(to right, #ff105f, #fd8f00); */
+    background: linear-gradient(to right, #ff105f, #fd8f00);
     border-radius: 50%;
-    border-left: 4px solid red;
-    border-top: 4px solid red;
+    /* border-left: 4px solid red;
+    border-top: 4px solid red; */
     animation-name: ser;
-    animation-duration: 0.8s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
+    transition: 2s;
 }
 
 .sup_main {
@@ -28,22 +39,27 @@
 
 @keyframes ser {
     0% {
-        transform: rotate(0deg);
+        /* transform: rotate(0deg); */
+        border-radius: 0%;
     }
-
+    
     25% {
-        transform: rotate(90deg);
+        border-radius: 20%;
+        /* transform: rotate(90deg); */
     }
-
+    
     50% {
-        transform: rotate(180deg);
+        border-radius: 30%;
+        /* transform: rotate(180deg); */
     }
-
+    
     75% {
-        transform: rotate(270deg);
+        border-radius: 50%;
+        /* transform: rotate(270deg); */
     }
-
+    
     100% {
+        border-radius: 10%;
         transform: rotate(360deg);
     }
 }
@@ -52,6 +68,6 @@
     position: fixed;
     background: #fff;
     border-radius: 50%;
-    background-color: lightgray;
+    background-color: transparent;
     font-size: 30px;
 }
