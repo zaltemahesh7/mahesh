@@ -19,7 +19,7 @@ echo '<br>User Full Name: '.$fname;
 echo '<br>User E-mail: '.$email;
 echo '<br>User Password: '.$pass;
 
-if(!$pass && !$email && !$pass){
+if(!$userName && !$email && !$pass){
 $q1 = "insert into users (userName, email, password) values('$userName', '$email', '$pass')";
 mysqli_query($conn, $q1);
 }
